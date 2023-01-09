@@ -6,7 +6,7 @@ plugins:
   manifests.sdk.operatorframework.io/v2: {}
   scorecard.sdk.operatorframework.io/v2: {}
 projectName: risingwave-operator
-repo: github.com/risingwavelabs/risingwave-operator
+repo: github.com/kartikeya999/risingwave-operator
 resources:
 - api:
     crdVersion: v1
