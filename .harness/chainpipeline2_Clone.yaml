@@ -1,0 +1,41 @@
+---
+pipeline:
+  projectIdentifier: "CSETest1"
+  orgIdentifier: "kartikeyaorganization"
+  tags: {}
+  stages:
+  - stage:
+      name: "test"
+      identifier: "test"
+      description: ""
+      type: "Custom"
+      spec:
+        execution:
+          steps:
+          - step:
+              type: "ShellScript"
+              name: "Shell Script_1"
+              identifier: "ShellScript_1"
+              spec:
+                shell: "Bash"
+                onDelegate: true
+                source:
+                  type: "Inline"
+                  spec:
+                    script: "echo \"hi\""
+                environmentVariables: []
+                outputVariables: []
+              timeout: "10m"
+      tags: {}
+      variables:
+      - name: "test"
+        type: "String"
+        description: ""
+        value: "<+input>"
+  variables:
+  - name: "test"
+    type: "String"
+    description: ""
+    value: "<+input>"
+  identifier: "chainpipeline2_Clone"
+  name: "chain-pipeline2 - Clone"
